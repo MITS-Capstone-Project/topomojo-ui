@@ -1,16 +1,16 @@
 {
-  "appname": "TopoMojo",
-  "apphost": "",
-  "mkshost": "",
-  "oidc": {
-    "authority": "https://devid.cmusei.dev",
-    "client_id": "client-with-code-grant",
-    "response_type": "code",
-    "scope": "openid profile jam-api",
-    "redirect_uri": "http://localhost:4200/oidc",
-    "silent_redirect_uri": "http://localhost:4200/assets/oidc-silent.html",
-    "loadUserInfo": true,
-    "useLocalStorage": true,
-    "debug": false
-  }
+    "appname": "TopoMojo",
+    "apphost": "http://localhost:5001",
+    "mkshost": "",
+    "oidc": {
+        "authority": "http://localhost:8080/realms/crucible",
+        "client_id": "topomojo-ui",
+        "response_type": "code",
+        "scope": "openid profile web-origins",
+        "redirect_uri": "http://localhost:4200/oidc",
+        "silent_redirect_uri": "http://localhost:4200/assets/oidc-silent.html",
+        "loadUserInfo": true,
+        "useLocalStorage": true,
+        "debug": false
+    }
 }
