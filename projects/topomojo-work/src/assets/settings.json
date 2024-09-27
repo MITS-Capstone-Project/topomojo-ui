@@ -1,0 +1,16 @@
+{
+  "appname": "TopoMojo",
+  "apphost": "http://localhost:5004/api/",
+  "mkshost": "http://localhost:5004/mks/",
+  "oidc": {
+    "authority": "http://localhost:8080/realms/crucible",
+    "client_id": "topomojo.ui",
+    "response_type": "code",
+    "scope": "openid profile topomojo",
+    "redirect_uri": "http://localhost:5004/topo/oidc",
+    "silent_redirect_uri": "http://localhost:5004/topo/assets/oidc-silent.html",
+    "loadUserInfo": true,
+    "useLocalStorage": true,
+    "debug": false
+  }
+}

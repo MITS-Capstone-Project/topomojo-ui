@@ -9,17 +9,17 @@ export const environment = {
     apphost: 'http://localhost:5004',
     mkshost: 'http://localhost:4201',
     oidc: {
-      client_id: 'dev-code',
-      authority: 'http://localhost:5000',
+      client_id: 'topomojo.api',
+      authority: 'http://localhost:8080/realms/crucible',
       redirect_uri: 'http://localhost:4200/oidc',
       silent_redirect_uri: 'http://localhost:4200/assets/oidc-silent.html',
       response_type: 'code',
       scope: 'openid profile dev-api',
       loadUserInfo: true,
       useLocalStorage: true,
-      debug: false
-    }
-  }
+      debug: false,
+    },
+  },
 };
 
 /*
