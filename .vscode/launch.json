@@ -1,0 +1,39 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Serve Topomojo MKS",
+            "runtimeExecutable": "npx",
+            "args": [
+                "ng",
+                "serve",
+                "topomojo-mks",
+                "--host",
+                "0.0.0.0",
+                "--disable-host-check",
+                "--serve-path",
+                "/mks/"
+            ],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Serve Topomojo Work",
+            "runtimeExecutable": "npx",
+            "args": [
+                "ng",
+                "serve",
+                "topomojo-work",
+                "--host",
+                "0.0.0.0",
+                "--disable-host-check",
+                "--serve-path",
+                "/topo/"
+            ],
+        }
+    ]
+}
